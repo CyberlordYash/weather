@@ -20,7 +20,7 @@ let weather = {
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").textContent=description;
-    document.querySelector(".temp")=temp+" degree celsius";
+    document.querySelector(".temp")=temp+" °C";
     document.querySelector(".humidity").textContent="Humidity "+humidity+"%";
     document.querySelector(".wind").textContent="Wind speed: "+speed+"km/hr";
   },

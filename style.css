@@ -4,7 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: aqua;
+  background-image: linear-gradient(
+    to bottom right,
+    #5800ff,
+    #0096ff,
+    #00d7ff,
+    #72ffff
+  );
 }
 .card {
   background-color: #000000d0;
@@ -43,4 +49,14 @@ button:hover {
 }
 .description {
   text-transform: capitalize;
+}
+.city {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.temp {
+  padding-left: 1rem;
+  font-size: 1.7rem;
+  color: #72ffff;
+  font-weight: bold;
 }
