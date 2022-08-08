@@ -23,5 +23,22 @@ let weather = {
     document.querySelector(".temp")=temp+" °C";
     document.querySelector(".humidity").textContent="Humidity "+humidity+"%";
     document.querySelector(".wind").textContent="Wind speed: "+speed+"km/hr";
+
+    document.querySelector(".weather").classList.remove("loading");
   },
+  search:function(){
+    this.fetchweather(document.querySelector(".search-bar").value);
+  }
 };
+
+document.querySelector(".search button").addEventListener("click",function(){
+  weather.search();
+});
+
+document.querySelector(".search-bar").addEventListener("keyup",function(event){
+  if(event.key=="Enter"){
+weather.search();
+  }
+
+});
+weather.fetchweather("noida");
