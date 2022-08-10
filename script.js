@@ -14,7 +14,7 @@ let weather = {
     const { name } = data;
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
-    const { speed } = data.wind;
+    const { speed } = data;
     console.log("yash");
     document.querySelector(".city").textContent = "weather in " + name;
     document.querySelector(".icon").src =
@@ -42,3 +42,4 @@ weather.search();
 
 });
 weather.fetchweather("noida");
+console.log(temp);
