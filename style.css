@@ -13,6 +13,7 @@ body {
   );
 }
 .card {
+  z-index: 1;
   background-color: #000000d0;
   padding: 2em;
   color: white;
